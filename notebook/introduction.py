@@ -2,6 +2,7 @@
 spam = 1 # そしてこれは2番目のコメントです
 # ... そして今は3番目!
 text = "# これはコメントではありません。なぜなら引用符の中にあるからです。"
+
 2 + 2
 # 4
 
@@ -120,6 +121,7 @@ text
 # 'Put several strings within parentheses to have them joined together.'
 
 prefix = 'Py'
+
 prefix 'thon'  # 変数と文字列リテラルを連結することはできません
 #   File "<ipython-input-45-e82a0defc0f8>", line 1
     prefix 'thon'  # 変数と文字列リテラルを連結することはできません
