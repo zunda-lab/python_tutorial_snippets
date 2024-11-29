@@ -41,7 +41,7 @@ width * height
 n  # 未定義の変数にアクセスしようとします
 # ---------------------------------------------------------------------------
 # NameError                                 Traceback (most recent call last)
-# <ipython-input-14-2232f5f156dc> in <cell line: 1>()
+# <ipython-input-13-2232f5f156dc> in <cell line: 1>()
 ----> 1 n  # 未定義の変数にアクセスしようとします
 # NameError: name 'n' is not defined
 
@@ -123,13 +123,13 @@ text
 prefix = 'Py'
 
 prefix 'thon'  # 変数と文字列リテラルを連結することはできません
-#   File "<ipython-input-45-e82a0defc0f8>", line 1
+#   File "<ipython-input-36-e82a0defc0f8>", line 1
     prefix 'thon'  # 変数と文字列リテラルを連結することはできません
            ^
 SyntaxError: invalid syntax
 
 ('un' * 3) 'ium'
-#   File "<ipython-input-46-f4764cbe42a8>", line 1
+#   File "<ipython-input-37-f4764cbe42a8>", line 1
     ('un' * 3) 'ium'
                ^
 SyntaxError: invalid syntax
@@ -177,7 +177,7 @@ word[:4] + word[4:]
 word[42]  # 単語は6文字しかありません
 # ---------------------------------------------------------------------------
 # IndexError                                Traceback (most recent call last)
-# <ipython-input-61-fbaa00624d1d> in <cell line: 1>()
+# <ipython-input-52-fbaa00624d1d> in <cell line: 1>()
 ----> 1 word[42]  # 単語は6文字しかありません
 # IndexError: string index out of range
 
@@ -190,14 +190,14 @@ word[42:]
 word[0] = 'J'
 # ---------------------------------------------------------------------------
 # TypeError                                 Traceback (most recent call last)
-# <ipython-input-66-91a956888ca7> in <cell line: 1>()
+# <ipython-input-55-91a956888ca7> in <cell line: 1>()
 ----> 1 word[0] = 'J'
 # TypeError: 'str' object does not support item assignment
 
 word[2:] = 'py'
 # ---------------------------------------------------------------------------
 # TypeError                                 Traceback (most recent call last)
-# <ipython-input-67-6488bbf78f5a> in <cell line: 1>()
+# <ipython-input-56-6488bbf78f5a> in <cell line: 1>()
 ----> 1 word[2:] = 'py'
 # TypeError: 'str' object does not support item assignment
 
@@ -211,21 +211,21 @@ s = 'supercalifragilisticexpialidocious'
 len(s)
 # 34
 
-squares = [1, 4, 9, 16]
+squares = [1, 4, 9, 16, 25]
 squares
-# [1, 4, 9, 16]
+# [1, 4, 9, 16, 25]
 
 squares[0]  # インデックス指定は要素を返します
 # 1
 
 squares[-1]
-# 16
+# 25
 
 squares[-3:]  # スライスは新しいリストを返します
-# [4, 9, 16]
+# [9, 16, 25]
 
 squares + [36, 49, 64, 81, 100]
-# [1, 4, 9, 16, 36, 49, 64, 81, 100]
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 cubes = [1, 8, 27, 65, 125] # ここに何か間違いがあります
 4 ** 3  # 4の3乗は64であって、65ではありません!
@@ -298,20 +298,12 @@ a, b = 0, 1
 while a < 10:
     print(a)
     a, b = b, a+b
-# 0
-# 1
-# 1
-# 2
-# 3
-# 5
-# 8
 
 i = 256*256
 print('The value of i is', i)
-# The value of i is 65536
 
 a, b = 0, 1
 while a < 1000:
     print(a, end=',')
     a, b = b, a+b
-# 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
+
