@@ -17,6 +17,12 @@ f = fib
 f(100)
 # 0 1 1 2 3 5 8 13 21 34 55 89 
 
+fib(0)
+print(fib(0))
+# 
+# 
+# None
+
 def fib2(n):  # return Fibonacci series up to n
     """Return a list containing the Fibonacci series up to n."""
     result = []
